@@ -1,0 +1,28 @@
+ket = '''Selamat datang di aplikasi menghitung, 
+silahkan pilih pilihan dibawah ini untuk menghitung:
+1. Menghitung Luas Persegi
+2. Menghitung Luas Lingkaran
+3. Menghitung Luas Segitiga'''
+
+pilihan = input(ket)
+pilihan = (input("Masukkan Pilihan :"))
+
+match pilihan:
+    case "1":
+        print("Menghitung Luas Persegi")
+        sisi = int(input("Masukkan Sisi :"))
+        luas = sisi*sisi
+        print("Hasil Luas Persegi yang sisinya", sisi, "adalah", luas)
+    case "2":
+        print("Menghitung Luas Lingkaran")
+        jari = float(input("Masukkan Jari-jari:"))
+        luasl = 3.14*jari
+        print("Luas Lingkaran yang jari-jarinya", jari, "adalah", int(luasl))
+    case "3":
+        print("Menghitung Luas Segitiga")
+        alas = int(input("Masukkan Alas :"))
+        tinggi = int(input("Masukkan Tinggi :"))
+        luass = 0.5*alas*tinggi
+        print("Luas Segitiga beralas", alas, "dan tinggi", tinggi, "adalah", int(luass))
+    case _:
+        print("Data yang kamu input salah")
