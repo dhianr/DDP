@@ -1,0 +1,7 @@
+kendaraan = ["Beat", "Motor", "150cc", "merah", "roda 2"]
+transport = ["mobil kodok", "mobil", "120cc", "hijau", "roda 4"]
+
+kendaraan.append("18jt, street")
+transport.insert(2, "WV Betle")
+print(kendaraan)
+print(transport)
